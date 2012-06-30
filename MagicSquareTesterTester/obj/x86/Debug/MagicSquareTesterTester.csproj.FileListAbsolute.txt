@@ -1,0 +1,5 @@
+D:\Afzal\Assignment\MagicSquareTesterTester\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Afzal\Assignment\MagicSquareTesterTester\obj\x86\Debug\MagicSquareTesterTester.exe
+D:\Afzal\Assignment\MagicSquareTesterTester\obj\x86\Debug\MagicSquareTesterTester.pdb
+D:\Afzal\Assignment\MagicSquareTesterTester.exe
+D:\Afzal\Assignment\MagicSquareTesterTester.pdb
