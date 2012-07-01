@@ -5,14 +5,14 @@ using System.IO;
 namespace MagicSquareTesterTester
 {
 
-    class MagicSquare
+    class TesterMagicSquare
     {
         private int[][] magicData; // Array to hold inputs from file
         private int width; // Number of columns
         private int height; // Number of rows
         private string apppath = string.Empty;
-
-        public MagicSquare()
+        
+        public TesterMagicSquare()
         {
             apppath = AppDomain.CurrentDomain.BaseDirectory;
         }
@@ -41,7 +41,7 @@ namespace MagicSquareTesterTester
             }
             catch (Exception ex)
             {
-
+                throw ex;
                 // Show the error message
                 // Console.WriteLine(ex.Message);
 

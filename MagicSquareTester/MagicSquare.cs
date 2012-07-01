@@ -40,6 +40,7 @@ namespace MagicSquareTester
             }
             catch (Exception ex)
             {
+                throw ex; 
                 
                // Show the error message
                // Console.WriteLine(ex.Message);
@@ -83,12 +84,18 @@ namespace MagicSquareTester
                         magic = magic && (rowSum == colSum) && (rowSum == magicSum);
                     }
 
-                    success = magic;
+                    success = magic; 
+                   
+                    //TEST AREA
+                    //success = true; 
+                    //success = false;
+
                 }
 
             }
             catch (Exception ex)
             {
+                throw ex; //Pass the exception
                 // Show the error message
                 // Console.WriteLine(ex.Message);
 

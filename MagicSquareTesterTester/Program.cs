@@ -1,4 +1,5 @@
 ﻿
+using System;
 namespace MagicSquareTesterTester
 {
     class Program
@@ -12,13 +13,17 @@ namespace MagicSquareTesterTester
                 exeToTest = args[0];
                 Tester tester = new Tester();
                 tester.Test(exeToTest);
-            } 
+            }
             else
             {
-                exeToTest = "MagicSquareTester.exe";
-                Tester tester = new Tester();
-                tester.Test(exeToTest);
+                Console.WriteLine("Argument missing ");
             }
+            //else
+            //{
+            //    exeToTest = "MagicSquareTester.exe";
+            //    Tester tester = new Tester();
+            //    tester.Test(exeToTest);
+            //}
             
         }
     }

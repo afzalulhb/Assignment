@@ -7,14 +7,21 @@ namespace MagicSquareTester
         static int Main(string[] args)
         {
             MagicSquare magic = new MagicSquare();
-            bool result = magic.DoMagicTest();
-            if (result == true)
+            try
             {
-                return 0;
+                bool result = magic.DoMagicTest();
+                if (result == true)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return 1;
+                }
             }
-            else
-            { 
-                return 1; 
+            catch(Exception)
+            {
+                return 2; //Error
             }
             //Console.WriteLine(result.ToString());
             //Console.ReadKey();

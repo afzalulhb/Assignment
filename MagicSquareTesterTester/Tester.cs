@@ -16,7 +16,7 @@ namespace MagicSquareTesterTester
 
         public void Test(string exeToTest)
         {
-            MagicSquare magic = new MagicSquare();
+            TesterMagicSquare magic = new TesterMagicSquare();
             // Console.WriteLine(result.ToString());
             // Console.ReadKey();
 
@@ -39,18 +39,18 @@ namespace MagicSquareTesterTester
                 p.WaitForExit();
                 otherAppResult = p.ExitCode;
 
-               
-                if (testRresult == otherAppResult)
-                {
-                   
-                    Console.WriteLine("not ok:"); 
-                    PrintData(); 
-                    Console.WriteLine("returned:" + ((otherAppResult == 0) ? " yes" : " no"));
-                    Console.WriteLine("expected:" + ((testRresult == 0) ? " yes" : " no"));
-                   
 
+                // IF MagicSquareTester has an exception, we will
+                // display error; else we will compare the result and show it
+                if (otherAppResult == 2)
+                {
+                    Console.WriteLine("An error occured in " + exeToTest);
+                    
+                }               
+                else if (testRresult == otherAppResult)
+                {
                     Console.WriteLine("ok");
-                    Console.ReadKey();
+                    //Console.ReadKey();
                }
                 else                 
                 {
